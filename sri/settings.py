@@ -120,6 +120,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 #=====================================
+#-- this for heroku
+import django_heroku
+
+django_heroku.settings(locals())
 
 # solvr keroku
 # Activate Django-Heroku.
